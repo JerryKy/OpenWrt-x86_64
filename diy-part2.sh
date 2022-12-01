@@ -11,4 +11,13 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+# 删除原主题
+rm -rf lede/package/lean/luci-theme-argon
+# 添加新主题
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git lede/package/lean/luci-theme-argon
+# 添加jerrykuku/luci-app-vssr
+# git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/lua-maxminddb.git lede/package/lean/lua-maxminddb
+# 本体
+git clone https://github.com/jerrykuku/luci-app-vssr.git lede/package/lean/luci-app-vssr

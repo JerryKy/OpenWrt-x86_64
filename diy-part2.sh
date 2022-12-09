@@ -18,6 +18,6 @@ rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 # 添加jerrykuku/luci-app-vssr
 # git lua-maxminddb 依赖
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+#git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 # 本体
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+#git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
